@@ -3,30 +3,30 @@ import java.util.List;
 public class Toys {
     private Integer idToy;
     private String name;
-    private Integer weight;
+    private Integer chance;
     public static int idCount = 1;
 
-    public Toys(String name, Integer weight) {
+    public Toys(String name, Integer chance) {
         this.idToy = Toys.idCount++;
         this.name = name;
-        this.weight = weight;
+        this.chance = chance;
     }
 
     @Override
     public String toString()
     {
         return String.format(new StringBuilder().append("\tID: %d; ")
-            .append("weight: %d; ")
+            .append("chance: %d; ")
             .append("name: %s")
-            .toString(), idToy, weight, name);
+            .toString(), idToy, chance, name);
     }
 
-    public int getWeights(List<Toys> toys) {
-        return this.weight;
+    public int getchances(List<Toys> toys) {
+        return this.chance;
     }
 
-    public Integer getWeightToy() {
-        return this.weight;
+    public Integer getchanceToy() {
+        return this.chance;
     }
 
     public int getID() {
@@ -38,7 +38,7 @@ public class Toys {
         else return false;
     }
 
-    public void setWeight(int value) {
-        this.weight = value;
+    public void setchance(int value) {
+        this.chance = value;
     }
 }
