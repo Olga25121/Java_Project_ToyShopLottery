@@ -17,7 +17,7 @@ public class App {
         try {
             System.out.println();
             System.out.println(" Добро пожаловать в  магазин детских товаров!\n" +
-                   " Примите участие в розыгрыше  и получите приз!\n");
+                   "Примите участие в розыгрыше  и получите приз!\n");
             head_menu(iScanner);
         } catch (ToysIsNotCreateException e) {
             System.out.println(e.getMessage());
